@@ -1,0 +1,23 @@
+body {
+    background: rgb(24, 51, 91);
+}
+
+.menu-container {
+    background: rgb(125, 50, 62);
+    flex-direction: column;
+    font-size: 40px;
+    font-weight: bold;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    gap: 30px;
+}
+.play-container  {
+    display: flex;
+    padding: 20px;
+    background: rgb(163, 83, 22);
+    align-items: center;
+    justify-content: center;
+}
