@@ -21,3 +21,38 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.head-container  {
+    display: flex;
+    font-size: 10px;
+    background: rgb(163, 83, 22);
+    align-items: center;
+    justify-content: center;
+}
+.screen-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 4px solid black;
+    background: rgb(50, 50, 155);
+    height: 90vh;
+    max-width: 100%;
+}
+.text-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    border: 4px solid black;
+    background-color: rgba(118, 15, 15, 0.2);
+    color: white;
+    width: 80%;
+    height: 20%;
+    margin: 20px;
+}
+
+@media only screen and (max-height: 720px) {
+    .screen-container {
+        height: 85vh;
+    }
+}
