@@ -2,6 +2,9 @@ function startGame() {
     window.location.assign("index2.html")
 }
 
+function startMenu() {
+    window.location.assign("index.html")
+}
 
 // ----- TEXT BOXES BELOW ----- credit: https://www.youtube.com/watch?v=8i2K7uwh124
 
