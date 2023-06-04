@@ -38,6 +38,20 @@ body {
     height: 90vh;
     max-width: 100%;
 }
+#menu-button {
+    position: absolute;
+    left: 30px;
+}
+
+button{
+    color: white;
+    background-color:rgba(66, 75, 131, 0.925);
+    border-radius: 5px;
+    width: 60px;
+    padding: 0px 10px 0px 10px;
+}
+
+/*  ----- TEXT BOX BELOW ----- */
 .text-box {
     display: flex;
     justify-content: center;
@@ -51,19 +65,16 @@ body {
     height: 20%;
     margin: 20px;
 }
-
-#menu-button {
-    position: absolute;
-    left: 30px;
+.text span {
+    opacity: 0;
 }
-
-button{
-    color: white;
-    background-color:rgba(66, 75, 131, 0.925);
-    border-radius: 5px;
-    width: 60px;
-    padding: 0px 10px 0px 10px;
+.text span.revealed {
+    opacity: 1
 }
+.text span.red {
+    color: #f23232
+}
+/*  ----- TEXT BOX ABOVE ----- */
 
 @media only screen and (max-height: 720px) {
     .screen-container {
