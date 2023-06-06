@@ -51,6 +51,24 @@ button{
     padding: 0px 10px 0px 10px;
 }
 
+#left-nav{
+    position: absolute;
+    left : 45px;
+    top: 450px;
+    height: 35px;
+    opacity: 0.45;
+    background-color: gray;
+}
+
+#right-nav{
+    position: absolute;
+    right: 45px;
+    top: 450px;
+    height: 35px;
+    opacity: 0.45;
+    background-color: gray;
+}
+
 /*  ----- TEXT BOX BELOW ----- */
 .text-box {
     display: flex;
