@@ -24,42 +24,36 @@ function resetBlock(){
     }
 }
 
+function notifier(currLocation) {
+    scene.style.background = currLocation.color;
+    notify.textContent = currLocation.name;
+    notify.style.display = "block";
+    setTimeout(function() {resetBlock()}, 5000)
+}
+
+
 function navLeft(){
     if(currentLocation === locations[0]){ // Blue to Green
         currentLocation = locations[2];
-        scene.style.background = currentLocation.color;
-        notify.textContent = currentLocation.name;
-        notify.style.display = "block";
-        setTimeout(resetBlock(), 5000)
-        console.log("This is notify style: ", notify.style.display)
+        notifier(currentLocation)
     } else if(currentLocation === locations[1]){ // Red to Blue
         currentLocation = locations[0];
-        scene.style.background = currentLocation.color;
-        notify.textContent = currentLocation.name;
-        notify.style.display = "block";
+        notifier(currentLocation)
     } else { // Green to Red
         currentLocation = locations[1]
-        scene.style.background = currentLocation.color;
-        notify.textContent = currentLocation.name;
-        notify.style.display = "block";
+        notifier(currentLocation)
     }
 }
 function navRight(){
     if(currentLocation === locations[0]){ // Blue to Red
         currentLocation = locations[1];
-        scene.style.background = currentLocation.color;
-        notify.textContent = currentLocation.name;
-        notify.style.display = "block";
+        notifier(currentLocation)
     } else if(currentLocation === locations[1]){ // Red to Green
         currentLocation = locations[2];
-        scene.style.background = currentLocation.color;
-        notify.textContent = currentLocation.name;
-        notify.style.display = "block";
+        notifier(currentLocation)
     } else { // Green to Blue 
         currentLocation = locations[0]
-        scene.style.background = currentLocation.color;
-        notify.textContent = currentLocation.name;
-        notify.style.display = "block";
+        notifier(currentLocation)
     }   
 }
 console.log("This is notify style: ", notify.style.display)
